@@ -6,11 +6,9 @@ import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import OurIcons from "../components/OurIcons"
 import SwiperContainer from "../components/SwiperContainer"
-import { data, dishImgs, iconImgs, resImgs } from "../data/data"
+import { data} from "../data/data"
 import { useEffect, useState } from "react"
-import { CardType, Dish, Restaurant } from "../data/types"
-import * as restaurantService from "../services/restaurant.service"
-import * as dishService from '../services/dish.service'
+import { CardType } from "../data/types"
 import * as utilService from '../services/util.service'
 
 const HomePage = () => {
