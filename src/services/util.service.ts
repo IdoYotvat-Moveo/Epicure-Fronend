@@ -1,4 +1,4 @@
-import { dishImgs, iconImgs, resImgs } from "../data/data"
+import { iconImgs } from "../data/data"
 import { CardType, Dish, Restaurant } from "../data/types"
 import * as restaurantService from './restaurant.service'
 import * as dishService from './dish.service'

@@ -1,11 +1,18 @@
 .chef-of-the-week-section {
     display: flex;
     flex-direction: column;
-    margin-inline: 20px;
+    // margin-inline: 20px;
     align-items: center;
 
     @include for-desktop-layout {
         align-items: center;
+
+    }
+
+    @media(min-width:800px) {
+        margin-inline: 20px;
+
+        
 
     }
 
@@ -20,6 +27,7 @@
         @media(min-width:800px) {
             font-size: $font-large30;
             margin-bottom: 40px;
+            
 
         }
     }
