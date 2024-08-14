@@ -1,7 +1,7 @@
 import Axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const BASE_URL = process.env.NODE_ENV === 'production'
-    ? 'https://16.171.153.14/api/v1/'
+    ? '/api/v1/'
     : '//localhost:3030/api/v1/';
 
 const axios = Axios.create({

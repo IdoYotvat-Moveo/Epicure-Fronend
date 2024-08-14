@@ -32,9 +32,9 @@ const AppHeader = () => {
             </div>
             <div className="nav-bar-container flex-align-center">
                 <nav className="nav-bar flex">
-                    <img src="src/assets/img/search.svg" alt="search" />
-                    <img src="src/assets/img/person.svg" alt="person" />
-                    <img src="src/assets/img/shoppingBag.svg" alt="shopping-bag" />
+                    <img src={data.header.navBar.images.search.src} alt="search" />
+                    <img src={data.header.navBar.images.person.src} alt="person" />
+                    <img src={data.header.navBar.images.shoppingBag.src} alt="shopping-bag" />
                 </nav>
 
             </div>

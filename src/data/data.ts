@@ -21,28 +21,29 @@ import aboutUsLogo from '../assets/img/about-logo-2.svg';
 import googlePlayImg from '../assets/img/googlePlay.svg';
 import appStoreImg from '../assets/img/appStore.svg';
 import closeHamburgerSrc from '../assets/img/closeburger.svg'
+import NISImg from '../assets/img/NIS.svg'
 
-export const iconImgs:{[key:string]:string} =
+export const iconImgs: { [key: string]: string } =
 {
     spicy: spicyImg,
     vegan: veganImg,
     vegeterian: vegetarianImg
 }
 
-export const chefOfTheWeekImg:{[key:string]:string} =
+export const chefOfTheWeekImg: { [key: string]: string } =
 {
     'Yossi Shitrit': yossiImg,
     //add more when needed
 }
 
-export const resImgs:{[key:string]:string} =
+export const resImgs: { [key: string]: string } =
 {
     "Claro": claroImg,
     "Tiger Lilly": tigerLillyImg,
     "Lumina": luminaImg
 }
 
-export const dishImgs:{[key:string]:string} =
+export const dishImgs: { [key: string]: string } =
 {
     "Pad Ki Mao": kiMaoImg,
     "Garbanzo Frito": garbanzoImg,
@@ -63,11 +64,11 @@ export const data = {
         logo: { src: logoImg },
         MainTitle: 'EPICURE',
         navBar: {
-            images: [
-                { search: { src: searchImg } },
-                { person: { src: personImg } },
-                { shoppingBag: { src: shoppingBag } }
-            ]
+            images: {
+                search: { src: searchImg },
+                person: { src: personImg },
+                shoppingBag: { src: shoppingBag }
+            }
         },
     },
     hero: {
@@ -100,6 +101,7 @@ export const data = {
     },
     signatureDishes: {
         MainTitle: 'SIGNATURE DISH OF',
+        nisImg : NISImg,
         cards: [
             {
                 title: 'Pad Ki Mao',
