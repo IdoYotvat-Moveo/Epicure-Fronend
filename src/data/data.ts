@@ -1,9 +1,4 @@
-import hamburgerImg from '../assets/img/hamburger.svg';
-import logoImg from '../assets/img/about-logo-1.svg';
-import searchImg from '../assets/img/search.svg';
-import personImg from '../assets/img/person.svg';
-import shoppingBag from '../assets/img/shoppingBag.svg';
-import heroImg from '../assets/img/hero-picture.png';
+
 import claroImg from '../assets/img/claro.png';
 import luminaImg from '../assets/img/Lumina.png';
 import tigerLillyImg from '../assets/img/tiger-lily.png';
@@ -17,11 +12,7 @@ import yossiImg from '../assets/img/yossi.png';
 import onzaImg from '../assets/img/onza.png';
 import kitchenMarketImg from '../assets/img/kithcenMarket.png';
 import mashyaImg from '../assets/img/mashya.png';
-import aboutUsLogo from '../assets/img/about-logo-2.svg';
-import googlePlayImg from '../assets/img/googlePlay.svg';
-import appStoreImg from '../assets/img/appStore.svg';
-import closeHamburgerSrc from '../assets/img/closeburger.svg'
-import NISImg from '../assets/img/NIS.svg'
+
 
 export const iconImgs: { [key: string]: string } =
 {
@@ -32,50 +23,50 @@ export const iconImgs: { [key: string]: string } =
 
 export const chefOfTheWeekImg: { [key: string]: string } =
 {
-    'Yossi Shitrit': yossiImg,
+    'Yossi Shitrit': 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634699/yossi_zhskzv.png',
     //add more when needed
 }
 
 export const resImgs: { [key: string]: string } =
 {
-    "Claro": claroImg,
-    "Tiger Lilly": tigerLillyImg,
+    "Claro": 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634693/claro_j8k9kr.png',
+    "Tiger Lilly": 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634698/tiger-lily_nreiix.png',
     "Lumina": luminaImg
 }
 
 export const dishImgs: { [key: string]: string } =
 {
-    "Pad Ki Mao": kiMaoImg,
-    "Garbanzo Frito": garbanzoImg,
-    "Smoked Pizza": smokedPizzaImg
+     kiMaoImg:'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634693/kiMao_iopvmq.png',
+     garbanzoImg:'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634695/garbanzo_h2275v.png',
+     smokedPizzaImg:'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634698/smokedPizza_qce7ts.png'
 }
 
 
 export const data = {
     header: {
         hamburger: {
-            src: hamburgerImg,
-            closeSrc: closeHamburgerSrc,
+            src: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634695/hamburger_qeec6d.svg',
+            closeSrc: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634694/closeburger_hvdzqc.svg',
             links: {
                 routes: ['Restaurants', 'Chefs',],
                 info: ['Contact Us', 'Term of Use', 'Privacy Policy']
             }
         },
-        logo: { src: logoImg },
+        logo: { src: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634693/about-logo-1_heaxgi.svg' },
         MainTitle: 'EPICURE',
         navBar: {
             images: {
-                search: { src: searchImg },
-                person: { src: personImg },
-                shoppingBag: { src: shoppingBag }
+                search: { src: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634697/search_lcsjdc.svg' },
+                person: { src: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634696/person_xxvlds.svg' },
+                shoppingBag: { src: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634698/shoppingBag_wcodd4.svg' }
             }
         },
     },
     hero: {
-        image: { src: heroImg },
+        image: { src: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634696/hero-picture_dv0cmr.png' },
         inputSection: {
             title: 'Epicure works with the top chef restaurant in Tel Aviv',
-            inputImg: { src: searchImg },
+            inputImg: { src: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634697/search_lcsjdc.svg' },
             inputPlaceHolder: {
                 title: 'Search for restaurant cuisine, chef'
             }
@@ -101,7 +92,7 @@ export const data = {
     },
     signatureDishes: {
         MainTitle: 'SIGNATURE DISH OF',
-        nisImg : NISImg,
+        nisImg: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634696/NIS_tnve8z.svg',
         cards: [
             {
                 title: 'Pad Ki Mao',
@@ -154,9 +145,9 @@ export const data = {
     iconSection: {
         mainTitle: 'the meaning of our icons',
         icons: [
-            { type: 'spicy', img: spicyImg },
-            { type: 'vegeterian', img: vegetarianImg },
-            { type: 'vegan', img: veganImg },
+            { type: 'spicy', img: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634698/spicy_kborzh.svg' },
+            { type: 'vegeterian', img: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634699/vegeterian_sg0qld.svg' },
+            { type: 'vegan', img: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634699/vegan_qkyd45.svg' },
         ]
     },
     chefOfTheWeek: {
@@ -181,10 +172,10 @@ export const data = {
         }
     },
     aboutUs: {
-        logo: { img: aboutUsLogo },
+        logo: { img: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634693/about-logo-2_wvjekn.svg' },
         stores: [
-            { store: 'google', img: googlePlayImg },
-            { store: 'apple', img: appStoreImg }
+            { store: 'google', img: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634695/googlePlay_opbb6y.svg' },
+            { store: 'apple', img: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634693/appStore_cdf9kh.svg' }
         ],
         title: 'about us',
         content: {
@@ -202,5 +193,13 @@ export const data = {
                 { title: 'privacy policy' },
             ]
         }
+    },
+    allResLink: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634694/arrows_bvmakh.svg',
+    rating:{
+        1: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634696/rating1_u9d17y.svg',
+        2: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634696/rating2_fps36e.svg',
+        3: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634696/rating3_uflfae.svg',
+        4: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634697/rating4_vwsnbc.svg',
+        5: 'https://res.cloudinary.com/dxibifkj2/image/upload/v1723634697/rating5_swzfgy.svg'
     }
 }

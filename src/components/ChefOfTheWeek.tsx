@@ -47,6 +47,7 @@ const ChefOfTheWeek = () => {
                 <div className="secondary-info flex column align-center">
                     <section className="chef-image">
                         <img src={chefOfTheWeekImg[chefOfTheWeek.name]} alt="" />
+                        {/* <img src='https://res.cloudinary.com/dxibifkj2/image/upload/v1723634699/yossi_zhskzv.png' alt="" /> */}
                         <div className="chef-name">
                             <span className="chef-name-span">
                                 {chefOfTheWeek.name}

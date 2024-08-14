@@ -6,10 +6,10 @@ import * as dishService from './dish.service'
 export const loadPopularRestaurants = async () => {
     try {
         const restaurants: Restaurant[] = await restaurantService.getPopularRestaurants()
-
         const mappedRestaurants: CardType[] = restaurants.map((restaurant) => ({
             title: restaurant.name,
-            img: resImgs[restaurant.name],
+            img: restaurant.image,
+            // img: resImgs[restaurant.name],
             type: 'popularRes',
             content: {
                 type: 'popularRes',
@@ -17,7 +17,6 @@ export const loadPopularRestaurants = async () => {
                 rating: restaurant.rating,
             },
         }))
-
         return mappedRestaurants
     } catch (err) {
         console.log('homepage => could not get restaurants', err)
@@ -31,7 +30,7 @@ export const loadSignatureDishes = async () => {
 
         const mappedDishes: CardType[] = dishes.map((dish) => ({
             title: dish.title,
-            img: dishImgs[dish.title] || '',
+            img: dish.image || '',
             type: 'signatureDish',
             content: {
                 type: 'signatureDish',

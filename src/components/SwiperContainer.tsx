@@ -7,6 +7,7 @@ import PopularResContent from "./PopularResContent";
 import SignatureDishContent from "./SignatureDishContent";
 import { useIsMobile } from '../assets/customHooks/useIsMobile';
 import { CardType } from '../data/types';
+import { data } from '../data/data';
 
 const contentComponents: { [key: string]: React.ComponentType<any> } = {
     popularRes: PopularResContent,
@@ -51,11 +52,11 @@ const SwiperContainer = ({ cards, spaceBetween, slidesPerView, mainTitle, type }
                 })}
                 {isLinkHidden && <div className="all-res-container">
                     <a className="all-restaurants-link" href="#">All Restaurants</a>
-                    <img src="src/assets/img/arrows.svg" alt="arrows" />
+                    <img src={data.allResLink} alt="arrows" />
                 </div>}
                 {cards[0].content?.type === 'popularRes' && !isLinkHidden && <div className="all-res-container">
                     <a className="all-restaurants-link" href="#">All Restaurants</a>
-                    <img src="src/assets/img/arrows.svg" alt="arrows" />
+                    <img src={data.allResLink} alt="arrows" />
                 </div>}
             </Swiper>
         </div>
