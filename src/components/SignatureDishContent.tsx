@@ -1,3 +1,4 @@
+import { data } from "../data/data"
 import { IconProps } from "../data/types"
 
 interface ContentProps {
@@ -24,7 +25,7 @@ const SignatureDishContent = ({ content }: ContentProps) => {
         ))}
       </div>
       <div className="price-container">
-        <img className="price-tag-currency" src="src/assets/img/NIS.svg" alt="New Israeli Shekels" />
+        <img className="price-tag-currency" src={data.signatureDishes.nisImg} alt="New Israeli Shekels" />
         <span className="price-tag-amount">{content.price}</span>
       </div>
     </div>
